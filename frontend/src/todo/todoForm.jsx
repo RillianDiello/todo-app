@@ -13,24 +13,24 @@ export default props => {
     }
 
 
-return (
-    <div role='form' className='todoForm'>
+    return (
+        <div role='form' className='todoForm'>
 
-        <Grid cols='12 9 10'>
-            <input id='description' className='form-control' placeholder='Add Task'
-                onChange={props.handleChange} value={props.description}
-                onKeyUp={keyHandler}
-            >
-            </input>
-        </Grid>
-        <Grid cols='12 3 10'>
-            <IconButton style='primary' icon='plus' onClick={props.handleAdd}
-            ></IconButton>
-            <IconButton style='info' icon='search' onClick={props.handleSearch}
-            ></IconButton>
-            <IconButton style='default' icon='eraser' onClick={props.handleClear}
-            ></IconButton>
-        </Grid>
-    </div>
-)
+            <Grid cols='12 9 10'>
+                <input id='description' className='form-control' placeholder='Add Task'
+                    onChange={props.handleChange} value={props.description}
+                    onKeyUp={keyHandler}
+                >
+                </input>
+            </Grid>
+            <Grid cols='12 3 10'>
+                <IconButton style='primary' icon='plus' onClick={props.handleAdd}
+                ></IconButton>
+                <IconButton style='info' icon='search' onClick={props.handleSearch}
+                ></IconButton>
+                <IconButton style='default' icon='eraser' onClick={props.handleClear}
+                ></IconButton>
+            </Grid>
+        </div>
+    )
 }
